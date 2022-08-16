@@ -13,7 +13,6 @@ header {
     align-items: center;
     justify-content: space-between;
     padding: 20px;
-    flex-direction: column;
     background-color: darkblue;
     color: white;
 }
@@ -27,6 +26,10 @@ nav a {
     color: white;
 }
 
+article {
+    margin-bottom: 12px;
+}
+
 section {
     display: flex;
     flex-direction: column;
@@ -35,12 +38,37 @@ section {
 
 h2 {
     margin-bottom: 8px;
+    text-align: center;
 }
 
 img {
-    margin: 8px;
+    margin: 8px 0;
 }
 
 #about-me {
     text-align: center;
+    align-items: center;
+}
+
+#about-me img {
+    max-width: 200px;
+    border-radius: 100%;
+}
+
+#work img {
+    width: 100%;
+}
+
+#contact-me nav{
+    display: flex;
+    justify-content: center;
+}
+
+@media screen and (max-width: 576px) {
+    header {
+        flex-direction: column;
+    }
+    nav a {
+        margin: 4px;
+    }
 }
