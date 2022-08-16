@@ -1,5 +1,6 @@
 body {
     background-color: aliceblue;
+    line-height: 150%;
 }
 
 header {
@@ -14,7 +15,6 @@ header {
 footer {
     display: flex;
     justify-content: space-between;
-    margin-top: 10px;
 
 }
 
@@ -23,15 +23,11 @@ h1 {
     background-color: darkcyan;
 }
 
-h2, h3 {
+h2 {
     padding: 2% 1% 2% 2%;
     border-right: 4px solid darkblue;
-    /* justify-content: flex-end; */
-}
-
-p {
-    padding: 2%;
-    display: block;
+    min-width: 300px;
+    text-align: right;
 }
 
 nav {
@@ -42,6 +38,7 @@ nav {
 
 nav a {
     margin: 10px;
+    color: black;
 }
 
 main {
@@ -51,7 +48,16 @@ main {
     justify-content: space-around;
 }
 
-.card{
+.card {
     display: flex;
+}
 
+.subcard {
+    display: flex;
+}
+
+@media screen and (max-width: 576px) {
+    .card {
+        flex-direction: column;
+    }
 }
