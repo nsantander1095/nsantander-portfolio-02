@@ -23,6 +23,11 @@ h1 {
     background-color: darkcyan;
 }
 
+h2, h3 {
+    padding: 2%;
+    border-right: 4px solid darkblue;
+}
+
 nav {
     display: flex;
     justify-content: center;
@@ -38,5 +43,10 @@ main {
     flex-wrap: wrap;
     flex-direction: column;
     justify-content: space-around;
+}
+
+.card{
+    display: flex;
+
 }
 
