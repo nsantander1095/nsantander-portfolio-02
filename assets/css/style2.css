@@ -1,0 +1,46 @@
+*, html{
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: aliceblue;
+    font-family: optima;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    flex-direction: column;
+    background-color: darkblue;
+    color: white;
+}
+
+nav {
+    padding: 12px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+h2 {
+    margin-bottom: 8px;
+}
+
+img {
+    margin: 8px;
+}
+
+#about-me {
+    text-align: center;
+}
