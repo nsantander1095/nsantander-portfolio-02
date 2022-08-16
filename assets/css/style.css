@@ -24,8 +24,14 @@ h1 {
 }
 
 h2, h3 {
-    padding: 2%;
+    padding: 2% 1% 2% 2%;
     border-right: 4px solid darkblue;
+    /* justify-content: flex-end; */
+}
+
+p {
+    padding: 2%;
+    display: block;
 }
 
 nav {
@@ -49,4 +55,3 @@ main {
     display: flex;
 
 }
-
