@@ -1,3 +1,4 @@
+/* adding variables for colors */
 :root {
     --brick: #A4161A;
     --light: #fff;
@@ -23,7 +24,7 @@ header {
     background-color: var(--brick);
     color: var(--light);
 }
-
+/* set max-width so the content doesnt float to edgs of page */
 main {
     max-width: 796px;
     margin: auto;
@@ -48,13 +49,13 @@ nav a {
 p a {
     color: var(--light);
 }
-
+/* made so all articles fall in the prescribed grid pattern */
 article {
     width: calc(50% - 16px);
     margin-bottom: 20px;
     padding: 8px;
 }
-
+/* part of grid pattern */
 article:first-of-type {
     width: 100%;
 }
@@ -82,7 +83,7 @@ img {
     text-align: center;
     align-items: center;
 }
-
+/* circle image */
 #about-me img {
     max-width: 200px;
     border-radius: 100%;
@@ -91,7 +92,7 @@ img {
 #work img {
     width: 100%;
 }
-
+/* so that boxes flow in correct form */
 #work div {
     display: flex;
     flex-direction: row;
@@ -102,21 +103,22 @@ img {
     display: flex;
     justify-content: space-around; 
 }
-
+/* makes webpage respoonsive */
 @media screen and (max-width: 576px) {
+    /* makes links in header form into column when viewport is altered */
     header {
         flex-direction: column;
         align-items: center;
     }
-
+    /* adds margin for the nav elements so they have some breathing room when viewport altered */
     nav a {
         margin: 4px;
     }
-
+    /* makes all boxes form into column when viewport is altered */
     article {
         width: 100%;
     }
-
+    /* makes contact me elements form into column when viewport is altered */
     #contact-me nav {
         flex-direction: column;
     }

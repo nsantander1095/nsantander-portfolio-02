@@ -1,4 +1,4 @@
-# Nick Santander Web Development Portfolio
+# Nicolas Santander Web Development Portfolio
 
 ## Table of Contents
 1. [Description](#description)
