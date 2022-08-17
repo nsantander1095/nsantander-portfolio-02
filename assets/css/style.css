@@ -1,63 +1,123 @@
+:root {
+    --brick: #A4161A;
+    --light: #fff;
+    --dark: #660708;
+}
+
+*, html{
+    padding: 0;
+    margin: 0;
+}
+
 body {
-    background-color: aliceblue;
+    background-color: var(--dark);
+    font-family: optima;
     line-height: 150%;
 }
 
 header {
     display: flex;
-    justify-content: space-between;
-    margin-bottom: 10px;
-    padding: 20px;
-    background-color: grey;
-    color: whitesmoke;
-}
-
-footer {
-    display: flex;
-    justify-content: space-between;
-
-}
-
-h1 {
-    padding: 20px;
-    background-color: darkcyan;
-}
-
-h2 {
-    padding: 20px;
-    border-right: 4px solid darkblue;
-    min-width: 300px;
-    text-align: right;
-}
-
-nav {
-    display: flex;
-    justify-content: center;
     align-items: center;
-}
-
-nav a {
-    margin: 10px;
-    color: black;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: var(--brick);
+    color: var(--light);
 }
 
 main {
+    max-width: 796px;
+    margin: auto;
+    color: var(--light);
+}
+
+footer {
+    color: var(--light);
+    padding: 20px;
+}
+
+nav {
+    padding: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--light);
+    padding: 4px;
+}
+
+p a {
+    color: var(--light);
+}
+
+article {
+    width: calc(50% - 16px);
+    margin-bottom: 20px;
+    padding: 8px;
+}
+
+article:first-of-type {
+    width: 100%;
+}
+
+section {
     display: flex;
-    flex-wrap: wrap;
     flex-direction: column;
-    justify-content: space-around;
+    padding: 20px;
 }
 
-.card {
-    display: flex;
+h1 {
+    text-align: center;
 }
 
-.subcard {
+h2 {
+    margin-bottom: 8px;
+    text-align: center;
+}
+
+img {
+    margin: 8px 0;
+}
+
+#about-me {
+    text-align: center;
+    align-items: center;
+}
+
+#about-me img {
+    max-width: 200px;
+    border-radius: 100%;
+}
+
+#work img {
+    width: 100%;
+}
+
+#work div {
     display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+#contact-me nav {
+    display: flex;
+    justify-content: space-around; 
 }
 
 @media screen and (max-width: 576px) {
-    .card {
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav a {
+        margin: 4px;
+    }
+
+    article {
+        width: 100%;
+    }
+
+    #contact-me nav {
         flex-direction: column;
     }
 }
